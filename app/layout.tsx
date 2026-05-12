@@ -8,14 +8,14 @@ const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space", disp
 export const metadata: Metadata = {
   metadataBase: new URL("https://cairis.cloud"),
   title: { default: "Allan Cairis | Arquitetura, DevSecOps e IA em escala corporativa", template: "%s | Allan Cairis" },
-  description: "Presenca executiva de Allan Cairis: arquitetura de software, DevSecOps, cloud, automacao com IA, governanca tecnica e transformacao digital para ambientes criticos.",
+  description: "Minha presenca executiva em tecnologia: arquitetura de software, DevSecOps, cloud, automacao com IA, governanca tecnica e transformacao digital para ambientes criticos.",
   applicationName: "Allan Cairis",
   authors: [{ name: "Allan Cairis" }],
   creator: "Allan Cairis",
   publisher: "Allan Cairis",
   keywords: ["Allan Cairis", "arquitetura de software", "DevSecOps", "IA aplicada", "automacao", "Azure DevOps", "Kubernetes", "engenharia de plataforma", "observabilidade", "governanca tecnica", "transformacao digital"],
   alternates: { canonical: "/" },
-  openGraph: { type: "website", locale: "pt_BR", url: "https://cairis.cloud", title: "Allan Cairis | Arquitetura, Seguranca e IA", description: "Perfil executivo e hands-on em arquitetura, DevSecOps, automacao inteligente e estrategia tecnologica.", siteName: "Allan Cairis" },
+  openGraph: { type: "website", locale: "pt_BR", url: "https://cairis.cloud", title: "Allan Cairis | Arquitetura, Seguranca e IA", description: "Minha visao executiva e hands-on em arquitetura, DevSecOps, automacao inteligente e estrategia tecnologica.", siteName: "Allan Cairis" },
   twitter: { card: "summary_large_image", title: "Allan Cairis | Arquitetura, DevSecOps e IA", description: "Transformando complexidade tecnologica em vantagem estrategica." },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } }
 };
