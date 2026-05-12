@@ -1,0 +1,8 @@
+.git
+.github
+node_modules
+.next
+*.log
+.env*
+README.md
+DEPLOY_HOSTINGER_EASYPANEL.md

@@ -1,0 +1,15 @@
+services:
+  cairis-cloud:
+    build:
+      context: .
+    image: cairis-cloud:latest
+    container_name: cairis-cloud
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1/healthz | grep -q ok"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
