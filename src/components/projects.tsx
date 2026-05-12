@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { initiatives } from "@/data/site";
 import { Reveal } from "./motion";
 
@@ -5,7 +6,11 @@ export function Projects() {
   return (
     <section id="iniciativas" className="section-shell py-24 md:py-32" aria-labelledby="iniciativas-title">
       <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-        <Reveal><p className="section-kicker">Iniciativas</p><h2 id="iniciativas-title" className="heading-lg text-balance">Projetos conceituais inspirados em problemas reais de escala.</h2></Reveal>
+        <Reveal>
+          <p className="section-kicker">Iniciativas</p>
+          <h2 id="iniciativas-title" className="heading-lg text-balance">Problemas que eu gosto de resolver: escala, risco, automação e clareza operacional.</h2>
+          <div className="glass mt-8 overflow-hidden rounded-lg"><Image src="/assets/ai-automation-workflows.svg" alt="Visual abstrato de automação com IA, agentes e fluxos corporativos" width={960} height={720} className="aspect-[4/3] w-full object-cover" /></div>
+        </Reveal>
         <div className="grid gap-4">
           {initiatives.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.04}>
