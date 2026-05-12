@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate project structure
+        run: sh scripts/validate.sh
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+      - name: Lint
+        run: npm run lint
+      - name: Build Next.js
+        run: npm run build
+      - name: Build Docker image
+        run: docker build -t cairis-cloud:${{ github.sha }} .
+      - name: Smoke test container
+        run: |
+          docker run -d --rm --name cairis-cloud-smoke -p 8080:80 cairis-cloud:${{ github.sha }}
+          for i in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8080/healthz | grep -q ok; then
+              docker stop cairis-cloud-smoke
+              exit 0
+            fi
+            sleep 1
+          done
+          docker logs cairis-cloud-smoke
+          docker stop cairis-cloud-smoke
+          exit 1
