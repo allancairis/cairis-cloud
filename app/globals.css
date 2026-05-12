@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-inter: "Inter";
+  --font-space: "Space Grotesk";
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #05070b; }
+body {
+  min-width: 320px;
+  margin: 0;
+  background: radial-gradient(circle at 18% 0%, rgba(47, 128, 255, 0.18), transparent 30rem), radial-gradient(circle at 82% 14%, rgba(93, 225, 255, 0.08), transparent 28rem), #05070b;
+  color: #f4f7fb;
+  text-rendering: geometricPrecision;
+}
+a { color: inherit; text-decoration: none; }
+::selection { background: rgba(47, 128, 255, 0.36); color: #ffffff; }
+.noise {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E");
+}
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.026));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(22px);
+}
+.section-shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+.section-kicker { margin: 0 0 14px; color: #5de1ff; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+.heading-xl { font-family: var(--font-space), Inter, sans-serif; font-size: clamp(3.25rem, 9vw, 7.8rem); line-height: 0.9; letter-spacing: 0; }
+.heading-lg { font-family: var(--font-space), Inter, sans-serif; font-size: clamp(2.25rem, 5vw, 4.5rem); line-height: 0.96; letter-spacing: 0; }
+.body-lg { color: #b8c3d1; font-size: clamp(1.02rem, 1.8vw, 1.22rem); line-height: 1.75; }
+.focus-ring { outline: none; }
+.focus-ring:focus-visible { box-shadow: 0 0 0 3px rgba(47, 128, 255, 0.45); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
