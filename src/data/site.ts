@@ -128,23 +128,23 @@ export const philosophy = [
 export const timeline = [
   {
     period: "Hoje",
-    title: "Associate Director no BTG Pactual",
-    text: "Lideranca tecnica estrategica em arquitetura, qualidade, seguranca, boas praticas, fornecedores e iniciativas de engenharia."
+    title: "Liderança técnica em ambientes corporativos críticos",
+    text: "Atuo em arquitetura, qualidade, seguranca, boas praticas, fornecedores e iniciativas de engenharia com impacto direto no negocio."
   },
   {
     period: "Evolucao continua",
     title: "DevSecOps, cloud e plataforma",
-    text: "Construcao de diretrizes, padroes e capacidades para times entregarem com mais seguranca, rastreabilidade e velocidade."
+    text: "Construo diretrizes, padroes e capacidades para times entregarem com mais seguranca, rastreabilidade e velocidade."
   },
   {
     period: "Fronteira aplicada",
     title: "IA, automacao e agentes",
-    text: "Pesquisa e aplicacao de RAG, agentes, N8N, APIs e automacoes para resolver gargalos reais de operacao e negocio."
+    text: "Pesquiso e aplico RAG, agentes, N8N, APIs e automacoes para resolver gargalos reais de operacao e negocio."
   },
   {
     period: "Base humana",
     title: "Estrada, comportamento e sistemas",
-    text: "Interesse por motocicletas touring, tecnologia, evolucao pessoal e leitura profunda de sistemas complexos."
+    text: "Carrego para a tecnologia a mesma disciplina que encontro na estrada: leitura de contexto, preparo, ritmo e evolucao constante."
   }
 ];
 

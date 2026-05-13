@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { philosophy } from "@/data/site";
 import { Reveal } from "./motion";
 
@@ -9,8 +10,17 @@ export function Philosophy() {
         <Reveal className="max-w-4xl">
           <p className="section-kicker">Filosofia profissional</p>
           <h2 id="filosofia-title" className="heading-lg text-balance">
-            Engenharia excelente é a que torna o complexo operável.
+            Eu acredito que engenharia excelente torna o complexo operável.
           </h2>
+        </Reveal>
+        <Reveal delay={0.06} className="glass mt-10 overflow-hidden rounded-lg">
+          <Image
+            src="/assets/devsecops-platform.svg"
+            alt="Visual abstrato de plataforma segura, DevSecOps e observabilidade"
+            width={960}
+            height={720}
+            className="max-h-[420px] w-full object-cover"
+          />
         </Reveal>
         <div className="mt-12 grid gap-4 md:grid-cols-5">
           {philosophy.map((item, index) => (

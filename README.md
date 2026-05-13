@@ -4,7 +4,7 @@ Site pessoal executivo premium para `cairis.cloud`, construído em Next.js, Type
 
 ## Posicionamento
 
-Presença digital para posicionar Allan Cairis como referência em arquitetura de software, DevSecOps, automação com IA, engenharia de plataforma, cloud, governança técnica e transformação digital.
+Presença digital para apresentar minha atuação em arquitetura de software, DevSecOps, automação com IA, engenharia de plataforma, cloud, governança técnica e transformação digital.
 
 Copy central:
 

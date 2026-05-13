@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Allan Cairis"
   },
   description:
-    "Presenca executiva de Allan Cairis: arquitetura de software, DevSecOps, cloud, automacao com IA, governanca tecnica e transformacao digital para ambientes criticos.",
+    "Minha presenca executiva em tecnologia: arquitetura de software, DevSecOps, cloud, automacao com IA, governanca tecnica e transformacao digital para ambientes criticos.",
   applicationName: "Allan Cairis",
   authors: [{ name: "Allan Cairis" }],
   creator: "Allan Cairis",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     url: "https://cairis.cloud",
     title: "Allan Cairis | Arquitetura, Seguranca e IA",
     description:
-      "Perfil executivo e hands-on em arquitetura, DevSecOps, automacao inteligente e estrategia tecnologica.",
+      "Minha visao executiva e hands-on em arquitetura, DevSecOps, automacao inteligente e estrategia tecnologica.",
     siteName: "Allan Cairis"
   },
   twitter: {

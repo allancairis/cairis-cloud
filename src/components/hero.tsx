@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowUpRight, Github, Linkedin, Mail, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import { AmbientPulse } from "./motion";
@@ -8,6 +9,14 @@ import { stats, systemSignals, terminalLines } from "@/data/site";
 export function Hero() {
   return (
     <section id="topo" className="relative isolate min-h-screen overflow-hidden pt-28" aria-labelledby="hero-title">
+      <Image
+        src="/assets/hero-architecture-ai.svg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="absolute inset-0 -z-20 object-cover opacity-40"
+      />
       <div className="absolute inset-0 -z-10 bg-radial-grid bg-[length:100%_100%,44px_44px,44px_44px] opacity-80" aria-hidden="true" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,#05070b_0%,rgba(5,7,11,.9)_46%,rgba(5,7,11,.62)_100%),linear-gradient(180deg,rgba(5,7,11,.2)_0%,#05070b_92%)]" aria-hidden="true" />
       <AmbientPulse />
@@ -20,7 +29,7 @@ export function Hero() {
             Arquitetura, Segurança e IA para ambientes que não podem falhar.
           </motion.h1>
           <motion.p className="body-lg mt-8 max-w-2xl" initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.16 }}>
-            Allan Cairis conecta liderança técnica, engenharia hands-on e visão de negócio para transformar complexidade tecnológica em vantagem estratégica.
+            Eu conecto liderança técnica, engenharia hands-on e visão de negócio para transformar complexidade tecnológica em vantagem estratégica.
           </motion.p>
           <motion.div className="mt-9 flex flex-wrap gap-3" initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.24 }} aria-label="Acoes principais">
             <a href="#contato" className="focus-ring inline-flex min-h-12 items-center gap-2 rounded-md bg-mercury px-5 py-3 text-sm font-bold text-carbon transition hover:bg-cyan">
@@ -51,7 +60,7 @@ export function Hero() {
             <div>
               <p className="text-sm text-muted">Executive technology profile</p>
               <h2 className="mt-2 font-display text-3xl font-semibold text-white">Allan Cairis</h2>
-              <p className="mt-2 text-sm text-cyan">Associate Director | BTG Pactual</p>
+              <p className="mt-2 text-sm text-cyan">Arquitetura corporativa | DevSecOps | IA aplicada</p>
             </div>
             <div className="grid h-14 w-14 shrink-0 place-items-center rounded-md border border-cyan/30 bg-cyan/10">
               <ShieldCheck className="h-7 w-7 text-cyan" aria-hidden="true" />

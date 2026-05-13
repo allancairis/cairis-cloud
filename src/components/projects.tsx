@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { initiatives } from "@/data/site";
 import { Reveal } from "./motion";
 
@@ -8,8 +9,17 @@ export function Projects() {
         <Reveal>
           <p className="section-kicker">Iniciativas</p>
           <h2 id="iniciativas-title" className="heading-lg text-balance">
-            Projetos conceituais inspirados em problemas reais de escala.
+            Problemas que eu gosto de resolver: escala, risco, automação e clareza operacional.
           </h2>
+          <div className="glass mt-8 overflow-hidden rounded-lg">
+            <Image
+              src="/assets/ai-automation-workflows.svg"
+              alt="Visual abstrato de automação com IA, agentes e fluxos corporativos"
+              width={960}
+              height={720}
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
         </Reveal>
         <div className="grid gap-4">
           {initiatives.map((project, index) => (

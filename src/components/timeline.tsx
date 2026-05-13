@@ -7,7 +7,7 @@ export function Timeline() {
       <Reveal className="max-w-3xl">
         <p className="section-kicker">Timeline</p>
         <h2 id="timeline-title" className="heading-lg text-balance">
-          Uma trajetória orientada por responsabilidade, construção e evolução.
+          Minha trajetória é orientada por responsabilidade, construção e evolução.
         </h2>
       </Reveal>
       <div className="mt-14">

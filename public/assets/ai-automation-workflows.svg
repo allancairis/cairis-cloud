@@ -1,0 +1,31 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#070B11"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(604 352) scale(520)">
+      <stop stop-color="#2F80FF" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#05070B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#a)"/>
+  <g opacity=".13" stroke="#CFE8FF"><path d="M0 150H1200M0 300H1200M0 450H1200M0 600H1200M0 750H1200"/><path d="M150 0V900M300 0V900M450 0V900M600 0V900M750 0V900M900 0V900M1050 0V900"/></g>
+  <g stroke="#5DE1FF" stroke-width="3" stroke-opacity=".58">
+    <path d="M248 450H426M774 450H954M600 274V376M600 524V650"/>
+    <path d="M430 324L520 390M770 324L680 390M430 576L520 510M770 576L680 510"/>
+  </g>
+  <g>
+    <rect x="484" y="376" width="232" height="148" rx="24" fill="#101823" stroke="#5DE1FF" stroke-opacity=".42"/>
+    <circle cx="600" cy="450" r="42" fill="#2F80FF" fill-opacity=".24" stroke="#5DE1FF"/>
+    <path d="M584 450h32M600 434v32" stroke="#F4F7FB" stroke-width="4" stroke-linecap="round"/>
+    <rect x="148" y="386" width="160" height="128" rx="18" fill="#0B1118" stroke="#5DE1FF" stroke-opacity=".32"/>
+    <rect x="892" y="386" width="160" height="128" rx="18" fill="#0B1118" stroke="#5DE1FF" stroke-opacity=".32"/>
+    <rect x="500" y="128" width="200" height="116" rx="18" fill="#0B1118" stroke="#5DE1FF" stroke-opacity=".32"/>
+    <rect x="500" y="680" width="200" height="116" rx="18" fill="#0B1118" stroke="#5DE1FF" stroke-opacity=".32"/>
+    <rect x="336" y="246" width="142" height="92" rx="16" fill="#101823" stroke="#2F80FF" stroke-opacity=".32"/>
+    <rect x="722" y="246" width="142" height="92" rx="16" fill="#101823" stroke="#2F80FF" stroke-opacity=".32"/>
+    <rect x="336" y="562" width="142" height="92" rx="16" fill="#101823" stroke="#2F80FF" stroke-opacity=".32"/>
+    <rect x="722" y="562" width="142" height="92" rx="16" fill="#101823" stroke="#2F80FF" stroke-opacity=".32"/>
+  </g>
+  <g fill="#5DE1FF" opacity=".75">
+    <circle cx="248" cy="450" r="7"/><circle cx="600" cy="274" r="7"/><circle cx="954" cy="450" r="7"/><circle cx="600" cy="650" r="7"/>
+  </g>
+</svg>
